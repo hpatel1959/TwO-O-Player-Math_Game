@@ -1,7 +1,8 @@
 class Question
+  NUM_RANGE = rand(1..20)
   attr_accessor :num1, :num2, :correct_answer
 
-  def initialize(num1, num2)
+  def initialize(num1 = NUM_RANGE, num2 = NUM_RANGE)
     @num1 = num1
     @num2 = num2
     @correct_answer = num1 + num2
@@ -13,7 +14,4 @@ class Question
 
 end
 
-# q1 = Question.new(rand(1..20), rand(1..20))
-
-# puts q1.make_addition_question
 

@@ -7,4 +7,4 @@ player2 = Player.new(gets.chomp)
 
 new_game = Game.new(player1, player2)
 
-new_game.ask_question
+new_game.start_game
